@@ -141,12 +141,12 @@ export default function Pages() {
             >
               {/* Existing profile card content */}
               <div className="p-8">
-                <div className="flex items-center gap-6 mb-10">
+                <div className="flex md:flex-row flex-col  items-center gap-6 mb-10">
                   <motion.div
                     initial={{ scale: 0.9 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="relative w-40 h-72"
+                    className="relative md:w-40 w-48 h-96 md:h-74 rounded-2xl overflow-hidden border border-purple-500/20"
                   >
                     <img
                       src={profile.image}
